@@ -28,8 +28,8 @@
 
                  <?php
                  session_start();
-                 if(isset($_SESSION['mensaje'])){
-                    $respuesta_error = $_SESSION['mensaje'];?>
+                 if(isset($_SESSION['mensaje_error_ingreso'])){
+                    $respuesta_error = $_SESSION['mensaje_error_ingreso'];?>
                     <script>
                         Swal.fire({
                         icon: "error",
@@ -37,6 +37,7 @@
                         text: "<?php echo $respuesta_error; ?>"});
                     </script>
                 <?php
+                unset($_SESSION['mensaje_error_ingreso']);
                  }
                  ?>
 

@@ -9,6 +9,11 @@ define('BD','gpon');
 //VARIABLE DONDE SE CONTIENE A LA RUTA PARA AHORRAR CODIGO Y CONFIGURACION EN EL FUTURO
 $URL = "http://localhost/gpon-tracker/";
 
+//CONFIGURACION PARA OBTENER LA FECHA Y HORA REFERENTE A NUESTRO PAIS
+date_default_timezone_set("America/Bogota");
+$fechaHora = date('Y-m-d H:i:s');
+
+
 //CONEXION A LA BASE DE DATOS TODO SE CONTIENE EN LA VARIABLE $pdo
 $servidor = "mysql:dbname".BD.";host".SERVIDOR;
 try{
@@ -16,5 +21,8 @@ try{
 }catch (PDOException $e){
     print_r($e);
 }
+
+
+
 
 ?>
