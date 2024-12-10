@@ -56,8 +56,6 @@ unset($_SESSION['mensaje_registro_ok']);
                                         <th scope="col">Coordenadas</th>
                                         <th scope="col">Referencia 1</th>
                                         <th scope="col">Numero Referencia 1</th>
-                                        <th scope="col">Referencia 2</th>
-                                        <th scope="col">Numero Referencia 2</th>
                                         <th scope="col">Opciones</th>
                                     </tr>
                                 </thead>
@@ -73,14 +71,12 @@ unset($_SESSION['mensaje_registro_ok']);
                                             <td><?php echo $bd_nod['coordenada_nod']?></td>
                                             <td><?php echo $bd_nod['nombre_referencia_uno_nod']?></td>
                                             <td><?php echo $bd_nod['numero_referencia_uno_nod']?></td>
-                                            <td><?php echo $bd_nod['nombre_referencia_dos_nod']?></td>
-                                            <td><?php echo $bd_nod['numero_referencia_dos_nod']?></td>
                                             <td>
                                               <center>
                                                 <div class="btn-group">
-                                                  <a href="show.php?id=<?php echo $idUsuario; ?>" type="button" class="btn btn-info"><i class="fa fa-eye"></i> Ver</a>
-                                                  <a href="update.php?id=<?php echo $idUsuario; ?>" type="button" class="btn btn-success"><i class="fa fa-pencil-alt"></i> Editar</a>
-                                                  <a href="delete.php?id=<?php echo $idUsuario; ?>" type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Eliminar</a>
+                                                  <a href="show.php?id=<?php echo $idNodo; ?>" type="button" class="btn btn-info"><i class="fa fa-eye"></i> Ver</a>
+                                                  <a href="update.php?id=<?php echo $idNodo; ?>" type="button" class="btn btn-success"><i class="fa fa-pencil-alt"></i> Editar</a>
+                                                  <a href="delete.php?id=<?php echo $idNodo; ?>" type="button" class="btn btn-danger"><i class="fa fa-trash"></i> Eliminar</a>
                                                 </div>
                                               </center>
                                             </td>

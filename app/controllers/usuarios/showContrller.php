@@ -1,4 +1,6 @@
-<?php 
+<?php
+//Controlador para obtener la informacion que existe en la tabla de nodos 
+//el id se obtiene de la plantilla index al seleccionar el boton ver
 
 $idUsuarioGet = $_GET['id'];
 $sql_users = "SELECT * FROM gpon.users where id = '$idUsuarioGet'";

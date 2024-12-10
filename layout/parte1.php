@@ -122,7 +122,7 @@
               <!--OLT-->
               <li class="nav-item">
                 <a href="<?php echo $URL;?>view/monitor/olt/" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-network-wired"></i>
                   <p>OLT</p>
                 </a>
                 <ul class="nav nav-treeview">
@@ -138,7 +138,7 @@
               <!--Servidores-->
               <li class="nav-item">
                 <a href="<?php echo $URL;?>view/monitor/servidores" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-server"></i>
                   <p>SERVIDORES</p>
                 </a>
                 <ul class="nav nav-treeview">
@@ -154,7 +154,7 @@
               <!--Servidores-->
               <li class="nav-item">
                 <a href="<?php echo $URL;?>view/monitor/servidores" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
+                  <i class="fas fa-cogs"></i>
                   <p>SWITCH ADMINISTRABLE</p>
                 </a>
                 <ul class="nav nav-treeview">
@@ -220,7 +220,7 @@
                   </li>
 
                   <li class="nav-item">
-                    <a href="<?php echo $URL;?>mantenimiento/" class="nav-link">
+                    <a href="<?php echo $URL;?>view/mantenimiento/nodos/create.php" class="nav-link">
                       <i class="far fa-circle nav-icon text-danger"></i>
                       <p>Nuevo</p>
                     </a>
