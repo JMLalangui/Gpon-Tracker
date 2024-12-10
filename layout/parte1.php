@@ -110,7 +110,7 @@
 
 
           <!--MONITOREO-->
-          <li class="nav-item menu-open"><!--menu-open-->
+          <li class="nav-item"><!--menu-open-->
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
@@ -171,7 +171,7 @@
           </li> <!-- END MONITOREO-->
           <!--============================================ OPCION DE MENU CON ITEM DESPLEGABLES ============================================-->
           <!--============================================ OPCION DE MENU CON ITEM DESPLEGABLES MANTENIMIENTO ============================================-->
-          <li class="nav-item ">
+          <li class="nav-item menu-open">
             <a href="#" class="nav-link active">
               <i class="nav-icon fas fa-cog"></i>
               <p>
@@ -207,13 +207,13 @@
 
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-user"></i>
-                  <p>Roles</p>
+                  <i class="nav-icon fas fa-broadcast-tower"></i>
+                  <p>Nodos</p>
                 </a>
                 <ul class="nav nav-treeview">
 
                   <li class="nav-item">
-                    <a href="<?php echo $URL;?>mantenimiento/" class="nav-link">
+                    <a href="<?php echo $URL;?>view/mantenimiento/nodos/" class="nav-link">
                       <i class="far fa-circle nav-icon text-danger"></i>
                       <p>Lista</p>
                     </a>
