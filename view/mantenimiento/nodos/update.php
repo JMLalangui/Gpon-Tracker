@@ -2,7 +2,7 @@
 include ('../../../app/config.php');
 include ('../../../layout/sesion.php');
 include ('../../../layout/parte1.php');
-include ('../../../app/controllers/mantenimiento/nodos/showController.php');
+include ('../../../app/controllers/mantenimiento/nodos/upController.php');
 ?>
 
 <div class="content-wrapper">
@@ -30,45 +30,47 @@ include ('../../../app/controllers/mantenimiento/nodos/showController.php');
                       </div>
 
 
-                      <form action="../../../app/controllers/mantenimiento/nodos/creacion.php" method="post">
+                      <form action="../../../app/controllers/mantenimiento/nodos/upNodoController.php" method="post">
                         <div class="card-body">
+                          <input type="text" name="id" value="<?php echo $idNodoGet?>" hidden>
                             <div class="form-group">
                               <label for="exampleInputEmail1">Nombre del nodo</label>
-                              <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $nombres_show?>" disabled>
+                              <input type="text" class="form-control" id="nombre" name="nombre" value="<?php echo $nombres_show?>" required>
                             </div>
 
                             <div class="form-group">
                               <label for="exampleInputEmail1">Direccion</label>
-                              <input type="email" class="form-control" id="direccion" name="direccion" value="<?php echo $direccion_show?>"  disabled>
+                              <input type="text" class="form-control" id="direccion" name="direccion" value="<?php echo $direccion_show?>"  required>
                             </div>
 
                             <div class="form-group">
                               <label for="exampleInputEmail1">Coordenadas</label>
-                              <input type="text" class="form-control" id="coordenada" name="coordenada" value="<?php echo $coordenada_show?>"  disabled>
+                              <input type="text" class="form-control" id="coordenada" name="coordenada" value="<?php echo $coordenada_show?>"  required>
                             </div>
                             
                             <div class="form-group">
                               <label for="exampleInputEmail1">Contacto de referencia 1</label>
-                              <input type="text" class="form-control" id="referenciauno" name="referenciauno" value="<?php echo $referencia_uno_show?>"  disabled>
+                              <input type="text" class="form-control" id="referenciauno" name="referenciauno" value="<?php echo $referencia_uno_show?>"  >
                             </div>
 
                             <div class="form-group">
                               <label for="exampleInputEmail1">Numero contacto de referencia 1</label>
-                              <input type="text" class="form-control" id="contactouno" name="contactouno" value="<?php echo $contacto_uno_show?>"  disabled>
+                              <input type="text" class="form-control" id="contactouno" name="contactouno" value="<?php echo $contacto_uno_show?>">
                             </div>
 
                             <div class="form-group">
                               <label for="exampleInputEmail1">Contacto de referencia 2</label>
-                              <input type="text" class="form-control" id="referenciados" name="referenciados" value="<?php echo $referencia_dos_show?>"  disabled>
+                              <input type="text" class="form-control" id="referenciados" name="referenciados" value="<?php echo $referencia_dos_show?>">
                             </div>
 
                             <div class="form-group">
                               <label for="exampleInputEmail1">Numero contacto de referencia 2</label>
-                              <input type="text" class="form-control" id="contactodos" name="contactodos" value="<?php echo $contacto_dos_show?>"  disabled>
+                              <input type="text" class="form-control" id="contactodos" name="contactodos" value="<?php echo $contacto_dos_show?>">
                             </div>
 
                             <div class="card-footer">
                               <a href="index.php" class="btn btn-secondary">Regresar</a>
+                              <button type="submit" class="btn btn-success">Actualizar</button>
                             </div>
                         </div>
                       </form>
@@ -83,5 +85,6 @@ include ('../../../app/controllers/mantenimiento/nodos/showController.php');
 </div>
 
 <?php
+include('../../../layout/mensajes.php');
 include ('../../../layout/parte2.php');
 ?>

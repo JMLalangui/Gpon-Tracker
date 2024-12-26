@@ -15,7 +15,7 @@ if ($password_user == ""){
         //SQL GUARDADO DE INFORMACION
         $sql_users_creation =$pdo->prepare( "UPDATE gpon.users SET
         nombres= :nombres, email= :email, telefono= :telefono, fh_actualizacion= :fh_actualizacion
-        WHERE id = :id");
+        WHERE id_nod = :id");
 
         $sql_users_creation->bindParam('id',$id);
         $sql_users_creation->bindParam('nombres',$nombres);

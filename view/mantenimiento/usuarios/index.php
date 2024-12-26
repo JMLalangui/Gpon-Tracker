@@ -49,7 +49,7 @@ unset($_SESSION['mensaje_registro_ok']);
                                 </div>
                         </div>
                         <div class="card-body" >
-                            <table id="table_usuarios" class="table table-bordered table-striped table-hover">
+                            <table id="table_datos" class="table table-bordered table-striped table-hover">
                                 <thead class="thead-dark">
                                     <tr>
                                         <th scope="col">N°</th>
@@ -105,26 +105,4 @@ unset($_SESSION['mensaje_registro_ok']);
 include('../../../layout/mensajes.php');
 include ('../../../layout/parte2.php');
 ?>
-<script>
-$(function () {
-    $("#table_usuarios").DataTable({
-      "pageLength": 5,
-          language: {
-              "emptyTable": "No hay información",
-              "info": "Mostrando _START_ a _END_ de _TOTAL_ Usuarios",
-              "infoEmpty": "Mostrando 0 to 0 of 0 Usuarios",
-              "lengthMenu": "Mostrar _MENU_ Usuarios",
-              "search": "Buscador:",
-              "zeroRecords": "Sin resultados encontrados",
-              "paginate": {
-                  "first": "Primero",
-                  "last": "Ultimo",
-                  "next": "Siguiente",
-                  "previous": "Anterior"
-              }
-             },
-      "responsive": true, "lengthChange": true, "autoWidth": false,
-      "buttons": ["csv", "excel", "pdf", "print"]
-    }).buttons().container().appendTo('#table_usuarios_wrapper .col-md-6:eq(0)');
-  });
-</script>
+<script src="../../../public/js/pagination.js"></script>

@@ -180,7 +180,8 @@
               </p>
             </a>
             <ul class="nav nav-treeview">
-
+            
+            <!--START USER-->
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-user"></i>
@@ -203,8 +204,9 @@
                   </li>
 
                 </ul>
-              </li>
-
+              </li><!--END USER-->
+              
+              <!--START NODOS-->
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-broadcast-tower"></i>
@@ -227,7 +229,32 @@
                   </li>
 
                 </ul>
-              </li>
+              </li><!-- END NODOS-->
+
+              <!--START MARCAS-->
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-pen-nib"></i>
+                  <p>Marcas</p>
+                </a>
+                <ul class="nav nav-treeview">
+
+                  <li class="nav-item">
+                    <a href="<?php echo $URL;?>view/mantenimiento/marcas/" class="nav-link">
+                      <i class="far fa-circle nav-icon text-danger"></i>
+                      <p>Lista</p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="<?php echo $URL;?>view/mantenimiento/marcas/create.php" class="nav-link">
+                      <i class="far fa-circle nav-icon text-danger"></i>
+                      <p>Nuevo</p>
+                    </a>
+                  </li>
+
+                </ul>
+              </li><!--END MARCAS-->
 
             </ul>
           </li>

@@ -48,7 +48,7 @@ unset($_SESSION['mensaje_registro_ok']);
                                 </div>
                         </div>
                         <div class="card-body" >
-                            <table id="table_usuarios" class="table table-bordered table-striped table-hover">
+                            <table id="table_datos" class="table table-bordered table-striped table-hover">
                                 <thead class="thead-dark">
                                     <tr>
                                         <th scope="col">N°</th>
@@ -102,3 +102,4 @@ unset($_SESSION['mensaje_registro_ok']);
 include('../../../layout/mensajes.php');
 include ('../../../layout/parte2.php');
 ?>
+<script src="../../../public/js/pagination.js"></script>
