@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gpon Tracker | Log in</title>
-    <link rel="icon" href="../public/images/gpon-tracker-icon.ico" type="image/ico">
+    <link rel="icon" href="../public/images/gpon-tracker-icon.ico" type="image/ico"> <!-- Se inserta una icono en la pestaña con forma del logo del sistema -->
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -22,10 +22,11 @@
 <body class="hold-transition login-page" style="background-color: #ffffff;">
 
     <div class="login-container ">
-        <img src="../public/images/gpon tracker.png" alt="">
+        <img src="../public/images/gpon tracker.png" alt=""> <!-- Se inserta una imagen del logotipo del sistema -->
         <div class="login-form">
             <div class="login-box">
 
+                <!-- Session para mostrar una notificacion de error de inicio de seccion en caso de ingresar datos errores o nulos -->
                  <?php
                  session_start();
                  if(isset($_SESSION['mensaje_error_ingreso'])){
@@ -39,13 +40,13 @@
                 <?php
                 unset($_SESSION['mensaje_error_ingreso']);
                  }
-                 ?>
+                 ?><!-- Session -->
 
                 <!-- /.login-logo -->
                 <div >
                     <center>
                     <div>
-                        <a href="../public/templates/AdminLTE/index2.html" class="h1">Bienvenido</a><hr class="gradient-line">
+                        <a href="#" class="h1">Bienvenido</a><hr class="gradient-line">
                     </div>
                     </center>
                     <div class="card-body">

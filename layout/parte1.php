@@ -256,6 +256,31 @@
                 </ul>
               </li><!--END MARCAS-->
 
+              <!--START MARCAS-->
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-pen-nib"></i>
+                  <p>Estados</p>
+                </a>
+                <ul class="nav nav-treeview">
+
+                  <li class="nav-item">
+                    <a href="<?php echo $URL;?>view/mantenimiento/estados/" class="nav-link">
+                      <i class="far fa-circle nav-icon text-danger"></i>
+                      <p>Lista</p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="<?php echo $URL;?>view/mantenimiento/estados/create.php" class="nav-link">
+                      <i class="far fa-circle nav-icon text-danger"></i>
+                      <p>Nuevo</p>
+                    </a>
+                  </li>
+
+                </ul>
+              </li><!--END MARCAS-->
+
             </ul>
           </li>
           <!--============================================ OPCION DE MENU CON ITEM DESPLEGABLES MANTENIMIENTO ============================================-->
