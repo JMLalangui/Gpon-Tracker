@@ -256,11 +256,11 @@
                 </ul>
               </li><!--END MARCAS-->
 
-              <!--START MARCAS-->
+              <!--START ESTADOS-->
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  <i class="nav-icon fas fa-pen-nib"></i>
-                  <p>Estados</p>
+                  <i class="nav-icon fas fa-circle-notch fa-spin text-warning"></i>
+                  <p>Estados de equipo</p>
                 </a>
                 <ul class="nav nav-treeview">
 
@@ -279,7 +279,32 @@
                   </li>
 
                 </ul>
-              </li><!--END MARCAS-->
+              </li><!--END ESTADOS-->
+
+              <!--START TIPOS-->
+                <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-shield-alt"></i>
+                  <p>Tipos de equipos</p>
+                </a>
+                <ul class="nav nav-treeview">
+
+                  <li class="nav-item">
+                    <a href="<?php echo $URL;?>view/mantenimiento/tipos/" class="nav-link">
+                      <i class="far fa-circle nav-icon text-danger"></i>
+                      <p>Lista</p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="<?php echo $URL;?>view/mantenimiento/tipos/create.php" class="nav-link">
+                      <i class="far fa-circle nav-icon text-danger"></i>
+                      <p>Nuevo</p>
+                    </a>
+                  </li>
+
+                </ul>
+              </li><!--END TIPOS-->
 
             </ul>
           </li>
