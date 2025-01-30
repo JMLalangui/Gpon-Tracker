@@ -151,7 +151,7 @@
                 </ul>
               </li>
               <!--Servidores-->
-              <!--Servidores-->
+              <!--SWITCH ADMINISTRABLE-->
               <li class="nav-item">
                 <a href="<?php echo $URL;?>view/monitor/servidores" class="nav-link">
                   <i class="fas fa-cogs"></i>
@@ -166,7 +166,7 @@
                   </li>
                 </ul>
               </li>
-              <!--Servidores-->
+              <!--SWITCH ADMINISTRABLE-->
             </ul>
           </li> <!-- END MONITOREO-->
           <!--============================================ OPCION DE MENU CON ITEM DESPLEGABLES ============================================-->
