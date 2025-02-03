@@ -1,0 +1,7 @@
+Este Script esta generado en el gestr de base de datos MySQL version '10.4.32-MariaDB'
+La base de datos que se sube no contiene informacion por los siguientes motivos:
+--Protocolos de seguridad de Simantec
+--Politicas de privacidad de Simantec
+
+Agradesco su comprencion en este punto gracias
+Atentamente Joel Lalangui Autor del sistema GPON-TRACKER.
