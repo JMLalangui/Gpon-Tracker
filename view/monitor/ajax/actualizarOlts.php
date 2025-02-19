@@ -34,8 +34,16 @@ foreach ($bd_olt as $bd_ip){
 
     <!-- Cada card será una columna dentro de la fila, ajustada para diferentes tamaños de pantalla -->
     <div class="col-md-2 col-sm-6 col-12 mb-4">  <!-- 3 columnas por fila en pantallas medianas, 2 en pequeñas, 1 en xs -->
-        <div class="<?php echo $respuesta; ?>" data-ip="<?php echo $ip; ?>" data-nombre="<?php echo $nombre; ?>" data-modelo="<?php echo $modelo; ?>" data-componentes="<?php echo $componentes; ?>" data-observacion="<?php echo $observacion; ?>" data-nombrenodo="<?php echo $nombrenodo; ?>"
-                                               data-direccion="<?php echo $direccion; ?>" data-coordenada="<?php echo $coordenada; ?>" data-referencia="<?php echo $referencia; ?>" data-numero="<?php echo $numero; ?>" onclick="openModal(this)">
+        <div class="<?php echo $respuesta; ?>"  data-ip="<?php echo $ip; ?>" 
+                                                data-nombre="<?php echo $nombre; ?>" 
+                                                data-modelo="<?php echo $modelo; ?>" 
+                                                data-componentes="<?php echo $componentes; ?>" 
+                                                data-observacion="<?php echo $observacion; ?>" 
+                                                data-nombrenodo="<?php echo $nombrenodo; ?>"
+                                                data-direccion="<?php echo $direccion; ?>" 
+                                                data-coordenada="<?php echo $coordenada; ?>" 
+                                                data-referencia="<?php echo $referencia; ?>" 
+                                                data-numero="<?php echo $numero; ?>" onclick="openModal(this)">
             <span class="info-box-icon"><i class="<?php echo $icon; ?>"></i></span>
             <div class="info-box-content">
                 <span class="info-box-text"><?php echo $bd_ip['ip']; ?></span>

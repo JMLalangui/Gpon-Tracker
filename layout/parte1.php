@@ -75,38 +75,6 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
           <!--============================================ OPCION DE MENU CON ITEM DESPLEGABLES ============================================-->
-          
-          <!--GPON-->
-          <!--
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                GPON 
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview"> -->
-              <!--ADMINISTRACION-->
-              <!--
-              <li class="nav-item">
-                <a href="<?php echo $URL;?>view/monitor/servidores" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Administracion</p>
-                </a>
-                <ul class="nav nav-treeview">
-                  <li class="nav-item">
-                    <a href="<?php echo $URL;?>view/administracion/panel.php" class="nav-link">
-                      <i class="far fa-circle nav-icon text-danger"></i>
-                      <p>prueba Trafico</p>
-                    </a>
-                  </li>
-                </ul>-->
-                <!--ADMINISTRACION-->
-                <!--
-              </li>
-            </ul>
-          </li>--> <!-- END GPON-->
 
 
           <!--MONITOREO-->
@@ -305,6 +273,31 @@
 
                 </ul>
               </li><!--END TIPOS-->
+
+              <!--START EQUIPOS-->
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-server"></i>
+                  <p> Equipos</p>
+                </a>
+                <ul class="nav nav-treeview">
+
+                  <li class="nav-item">
+                    <a href="<?php echo $URL;?>view/mantenimiento/equipos/" class="nav-link">
+                      <i class="far fa-circle nav-icon text-danger"></i>
+                      <p>Lista</p>
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="<?php echo $URL;?>view/mantenimiento/equipos/create.php" class="nav-link">
+                      <i class="far fa-circle nav-icon text-danger"></i>
+                      <p>Nuevo</p>
+                    </a>
+                  </li>
+
+                </ul>
+              </li><!--END EQUIPOS-->
 
             </ul>
           </li>
